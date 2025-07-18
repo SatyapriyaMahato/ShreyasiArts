@@ -19,7 +19,7 @@
     --Soft-Red: hsl(0, 94%, 66%);
     --btn-bg-color: #FFF9F4;
     --secondary-bg-color: #1b1a1a;
-    --primary-bg-color: #EAEAE9;
+    --primary-bg-color: #FFF9F4;
     --transparent-bg: #141414eb;
     --transparent-header-bg: #1a1a1aab;
     --box-shadow: 0px 0px 14px 3px #00000082;
@@ -150,7 +150,7 @@ video:hover {}
 
 
 section {
-    /* background-color: var(--primary-bg-color); */
+    background-color: var(--primary-bg-color);
     padding: 5.5rem 0;
 }
 
@@ -172,6 +172,10 @@ section {
 }
 
 /*--------------------------- Header Section ------------------*/
+header {
+    background-color: var(--primary-bg-color);
+}
+
 header nav .title {
     /* font-family: "Pinyon Script", cursive; */
     font-family: var(--main-font-family);
@@ -196,7 +200,7 @@ header nav .title {
     background-image: var(--bg-image);
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 100vh; */
+    /* height: 90vh; */
     padding-top: 0;
 }
 
@@ -257,7 +261,7 @@ header nav .title {
 
 .main-section h1 {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .galary-items-data {
