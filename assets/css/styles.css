@@ -107,7 +107,7 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--Link-at-rest);
+    color: white;
 }
 
 a:hover {
@@ -120,16 +120,12 @@ a:hover {
 ul {
     display: flex;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
     list-style: none;
-    background-color: var(--secondary-bg-color);
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    color: var(--tech-list);
-    font-size: 1.2rem;
-    padding: .5rem;
 
 }
 
@@ -176,7 +172,8 @@ header {
     background-color: var(--primary-bg-color);
 }
 
-header nav .title {
+
+.site-logo {
     /* font-family: "Pinyon Script", cursive; */
     font-family: var(--main-font-family);
 
@@ -269,6 +266,7 @@ header nav .title {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    align-items: center;
 }
 
 
@@ -316,6 +314,137 @@ header nav .title {
     color: white;
 }
 
+
+.news {
+    padding: 4.8px 0 9.6px 0;
+    text-align: center;
+}
+
+.news-heading {
+    font-size: 44px;
+    line-height: 1.4;
+
+    color: #333;
+}
+
+.news p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: 12px;
+    line-height: 1.8;
+}
+
+input[type="email"] {
+    display: inline-block;
+    width: 60%;
+    padding: 18px 36px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 70px;
+    margin-top: 18px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+    font-family: var(--main-font-family);
+}
+
+.bt {
+    margin-left: -160px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 20px;
+    font-family: var(--main-font-family);
+
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    background-color: #ac9eda;
+    color: #fff;
+}
+
+.bt:hover {
+    background-color: #9a8ad1;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #9a8ad1;
+    color: white;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer li {
+    display: inline-block;
+    /* Change to inline-block for horizontal layout */
+    padding: 0 10px;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.footer .footer-break {
+    height: 2px;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    margin: 4rem 0;
+}
+
 @media (max-width: 768px) {
     .div-hero {
         flex-direction: column-reverse;
@@ -324,5 +453,23 @@ header nav .title {
 
     .galary-items-data {
         grid-template-columns: 1fr;
+    }
+
+    .news form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .bt {
+        margin-left: 0;
+
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
     }
 }
